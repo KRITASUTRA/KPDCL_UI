@@ -28,7 +28,7 @@
 
         <!-- content-container -->
 
-        <div class="bg-light p-5" style="width:80%; " id="dashboard-content" >
+        <div class="bg-light p-5" style="width:80%; display: none;" id="dashboard-content" >
             <!-- top-div -->
             <div class="d-flex justify-content-between">
                 <div>
@@ -100,32 +100,32 @@
                 </div>
                 <div class="p-4">
                 <table class="w-100 p-2 text-center">
-                    <tr class=" fs-3">
+                    <tr class=" fs-3 bg-light">
                         <th>Month</th>
                         <th>Amount</th>
                         <th>Transaction ID</th>
                         <th>Time</th>
                     </tr>
-                    <tr class="py-4">
-                        <td class="fs-5">APR-2023</td>
+                    <tr class="py-4 bg-light mt-5 rounded">
+                        <td class="fs-5 py-3">APR-2023</td>
                         <td class="fs-5">Rs.3000</td>
                         <td class="fs-5">122113</td>
                         <td class="fs-5">30s Ago</td>
                     </tr>
-                    <tr class=" py-4">
-                        <td class="fs-5">APR-2023</td>
+                    <tr class=" py-4 bg-light mt-5 rounded">
+                        <td class="fs-5 py-3">APR-2023</td>
                         <td class="fs-5">Rs.3000</td>
                         <td class="fs-5">122113</td>
                         <td class="fs-5">30s Ago</td>
                     </tr>
-                    <tr class=" py-4">
-                        <td class="fs-5">APR-2023</td>
+                    <tr class=" py-4 bg-light">
+                        <td class="fs-5 py-3">APR-2023</td>
                         <td class="fs-5">Rs.3000</td>
                         <td class="fs-5">122113</td>
                         <td class="fs-5">30s Ago</td>
                     </tr>
-                    <tr class="py-4">
-                        <td class="fs-5">APR-2023</td>
+                    <tr class="py-4 bg-light">
+                        <td class="fs-5 py-3">APR-2023</td>
                         <td class="fs-5">Rs.3000</td>
                         <td class="fs-5">122113</td>
                         <td class="fs-5">30s Ago</td>
@@ -209,6 +209,198 @@
                 </div>
             </div>
         </div>
+
+        <!-- name change request -->
+
+        <div class="bg-light p-5" style="width:80%; display: none;" id="name-change-request-content">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <div>Home/Name Change</div>
+                    <div class="fs-2 fw-bold">Request for name change</div>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <div class= "bg-white rounded-pill d-flex align-items-center p-2">
+                        <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
+                            <i class="bi bi-search fs-6 me-2"></i>
+                            <input type="text" placeholder="Search" class="border-0 bg-transparent">
+                        </div>
+                        <img class="rounded-circle" style="height: 50px; width: 50px;" src="https://fastly.picsum.photos/id/1050/536/354.jpg?hmac=fjxUSeQRIROZvo_be9xEf-vMhMutXf2F5yw-WaWyaWA" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <div class="w-50">
+                    <div class="bg-white p-4 rounded w-100">
+                        <h3>e-application</h3>
+                        <p>Enter given required details</p>
+                        <form action="" class="d-flex flex-column">
+                            <label for="">Consumer Code <span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Name of registered consumer (at present)<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Name to be changed to (new)<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Consumer category<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Contracted Load<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Address<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Email/Phone Number<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <button class="bg-primary rounded-pill border-0 py-3 mt-3 text-white">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-3">
+                        <h2>Proof of Identification (POI) - Upload</h2>
+                        <ol>
+                            <li class="py-2">Copy of latest bill duly paid</li>
+                            <li class="py-2">Proof of ownership / legal occupancy of premises</li>
+                            <li class="py-2">No objection certificate from the existing consumer if available / possible</li>
+                            <li class="py-2">Registered deed / Succession certificate</li>
+                            <li class="py-2">Scanned copy of signature </li>
+                            <li class="py-2">Proof of Identification (Adhaar card/Election card/Passport/Domicile)</li>
+                            <li class="py-2">If any other document , please specify</li>
+                        </ol>
+                    </div>
+                    <div class="mt-5 rounded p-5 bg-white">
+                        <h3 class="text-center">Upload</h3>
+                        <div class="p-5 text-center bg-light mt-5" style="border: 1px dashed grey;" >
+                            <i class="bi bi-cloud-arrow-up text-primary fs-1"></i>
+                            <h5 class="fs-3">Drag & Drop Files Here</h5>
+                            <p>Supported formates : JPEG,PNG,GIF,MP4,PDF,PSD,AI,Word,PPT</p>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2 rounded-pill mt-3 border-0 w-100">Upload Files</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ownership-change-request -->
+
+        <div class="bg-light p-5" style="width:80%; display: none;" id="ownership-change-request-content">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <div>Home/Ownership</div>
+                    <div class="fs-2 fw-bold">Change of ownership</div>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <div class= "bg-white rounded-pill d-flex align-items-center p-2">
+                        <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
+                            <i class="bi bi-search fs-6 me-2"></i>
+                            <input type="text" placeholder="Search" class="border-0 bg-transparent">
+                        </div>
+                        <img class="rounded-circle" style="height: 50px; width: 50px;" src="https://fastly.picsum.photos/id/1050/536/354.jpg?hmac=fjxUSeQRIROZvo_be9xEf-vMhMutXf2F5yw-WaWyaWA" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <div class="w-50">
+                    <div class="bg-white p-4 rounded w-100">
+                        <h3>e-application</h3>
+                        <p>Enter given required details</p>
+                        <form action="" class="d-flex flex-column">
+                            <label for="">Consumer Code <span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Name of registered consumer (at present)<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Name to be changed to (new)<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Consumer category<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Contracted Load<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Address<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="" class="mt-3">Email/Phone Number<span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <button class="bg-primary rounded-pill border-0 py-3 mt-3 text-white">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-3">
+                        <h2>Proof of Identification (POI) - Upload</h2>
+                        <ol>
+                            <li class="py-2">Copy of latest bill duly paid</li>
+                            <li class="py-2">Proof of ownership / legal occupancy of premises</li>
+                            <li class="py-2">No objection certificate from the existing consumer if available / possible</li>
+                            <li class="py-2">Registered deed / Succession certificate</li>
+                            <li class="py-2">Scanned copy of signature </li>
+                            <li class="py-2">Proof of Identification (Adhaar card/Election card/Passport/Domicile)</li>
+                            <li class="py-2">If any other document , please specify</li>
+                        </ol>
+                    </div>
+                    <div class="mt-5 rounded p-5 bg-white">
+                        <h3 class="text-center">Upload</h3>
+                        <div class="p-5 text-center bg-light mt-5" style="border: 1px dashed grey;" >
+                            <i class="bi bi-cloud-arrow-up text-primary fs-1"></i>
+                            <h5 class="fs-3">Drag & Drop Files Here</h5>
+                            <p>Supported formates : JPEG,PNG,GIF,MP4,PDF,PSD,AI,Word,PPT</p>
+                        </div>
+                        <button class="bg-primary text-white px-5 py-2 rounded-pill mt-3 border-0 w-100">Upload Files</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- raise ticket -->
+        
+        <div class="bg-light p-5" style="width:80%;" id="raise-ticket-content">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <div>Home/Track</div>
+                    <div class="fs-2 fw-bold">Raise & Track your request</div>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <div class="bg-white rounded-circle px-2  text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
+                    <div class= "bg-white rounded-pill d-flex align-items-center p-2">
+                        <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
+                            <i class="bi bi-search fs-6 me-2"></i>
+                            <input type="text" placeholder="Search" class="border-0 bg-transparent">
+                        </div>
+                        <img class="rounded-circle" style="height: 50px; width: 50px;" src="https://fastly.picsum.photos/id/1050/536/354.jpg?hmac=fjxUSeQRIROZvo_be9xEf-vMhMutXf2F5yw-WaWyaWA" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-5 " >
+                    <div class="bg-white p-4 rounded w-50"> 
+                        <h3>Raise Ticket</h3>
+                        <p>Enter given required details</p>
+                        <form action="" class="d-flex flex-column">
+                            <label for="">Consumer Code <span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="">Select Problem Category:</label>
+                            <select name="" id="" style="height: 50px;" class="rounded mt-4">
+                                <option value="">Select Option</option>
+                                <option value="">1</option>
+                                <option value="">1</option>
+                                <option value="">1</option>
+                                <option value="">1</option>
+                            </select>
+                            <label for="" class="mt-2">Describe your problem:</label>
+                            <textarea name="" id="" cols="30" rows="10" class="rounded mt-4"></textarea>
+                            <button class="bg-primary rounded-pill border-0 py-3 mt-3 text-white">Submit</button>
+                        </form>
+                    </div>
+                    <div class="bg-white p-4 rounded w-50 ms-4 " style="height: fit-content;">
+                        <h3>Track Ticket</h3>
+                        <p>Enter given required details</p>
+                        <form action="" class="d-flex flex-column">
+                            <label for="" class="mt-3">Application ID</label><span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <label for="">Consumer Code <span><i class="bi bi-asterisk text-danger"></i></span></label>
+                            <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
+                            <button class="bg-primary rounded-pill border-0 py-3 mt-3 text-white">Track</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+
+
     </div>
 </body>
 <script src="./index.js"></script>
