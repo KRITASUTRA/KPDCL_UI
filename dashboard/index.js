@@ -25,8 +25,6 @@ consumerCode.addEventListener("click",()=>{
     ownerChangeRequestContent.style.display = "none";
     raiseTicketContent.style.display = "none";
 
-
-
 });
 
 nameChangeRequest.addEventListener("click",()=>{
