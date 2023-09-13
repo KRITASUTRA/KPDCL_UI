@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.parent-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1542px;
+height: 800px;
+  background: #fff;
+  margin: 50px auto;
+}
+.secondry-div-wrapper{
+  padding: 10px;
+  margin: auto;
+}
+
+
+.image-div {
+  flex: 0 0 60%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: #ffffffff url("../public/vecteezy-flatisometricconceptillustrationhousewithsolarpanel-7885716-1@2x.png") 50% / cover no-repeat;
+}
+
+.form-div {
+  flex: 0 0 40%;
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid var(--glassmorphism-stroke, rgba(244, 235, 235, 0.7));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.74) 40.04%,
+    rgba(255, 255, 255, 0.51) 99.2%
+  );
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2) inset,
+    0px 5px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-div .login-signup-flex,
+.form-div .text-01,
+.form-div .email-div,
+.form-div .password-div,
+.form-div .checkbox-forgot,
+.form-div .login-btn,
+.form-div .signin-using,
+.form-div .social-icons,
+.form-div .dont-have-account {
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-div .login-signup-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.form-div .upper-login {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.32px;
+}
+
+.form-div .upper-signup {
+}
+
+.form-div .text-01 {
+  width: 348px;
+  height: 14.6px;
+  flex-shrink: 0;
+  padding-top: 10px;
+  color: var(--secondary-grey-600, #A3AED0);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.32px;
+}
+
+.form-div .email-div {
+  width: 100%; 
+  height: 72.779px;
+  flex-shrink: 0;
+}
+
+.form-div .email-label {
+  color: #2B3674;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+}
+
+.form-div .email-div::before {
+  content: "*";
+  color: #FF0101;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form-div .email-input {
+  width: 100%; 
+  height: 45px;
+  flex-shrink: 0;
+  color: var(--secondary-grey-600, #A3AED0);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+  border: 1px solid var(--glassmorphism-stroke, rgba(244, 235, 235, 0.7));
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.form-div .password-div {
+  width: 100%; 
+  height: 72.779px;
+  flex-shrink: 0;
+}
+
+.form-div .password-label {
+  color: #2B3674;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+}
+
+.form-div .password-input {
+  width: 100%; 
+  height: 45px;
+  flex-shrink: 0;
+  color: var(--secondary-grey-600, #A3AED0);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+  border: 1px solid var(--glassmorphism-stroke, rgba(244, 235, 235, 0.7));
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.form-div .checkbox-forgot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-div .keep-me-login {
+  color: #2B3674;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+}
+
+.form-div .forget-password {
+  color: #1B63F0;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+}
+
+.form-div .login-btn {
+  width: 160px;
+  height: 45px;
+  border-radius: 5px;
+  background: #0D67CA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form-div .signin-using {
+  width: 105px;
+  height: 18px;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form-div .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form-div .social-icons span {
+  margin: 0 10px;
+}
+
+.form-div .meta,
+.form-div .google,
+.form-div .twitter {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.form-div .dont-have-account {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27.941px;
+  letter-spacing: -0.28px;
+}
+
+.form-div .dont-have-account a {
+  color: #0D67CA;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27.941px;
+  letter-spacing: -0.28px;
+  text-decoration: none;
+}
+.form-div .content-wrapper {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.form-div .login-btn {
+  width: 160px;
+  height: 45px;
+  border-radius: 5px;
+  background: #0D67CA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div .signin-using {
+  width: 105px;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div .dont-have-account {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27.941px;
+  letter-spacing: -0.28px;
+  margin-top: 10px;
+}
+
+.form-div .dont-have-account a {
+  color: #0D67CA;
+  text-decoration: none;
+}
+
+.form-div .content-wrapper .signin-using,
+.form-div .content-wrapper .social-icons,
+.form-div .content-wrapper .dont-have-account {
+  flex-shrink: 0; 
+  margin-top: 10px; 
+}

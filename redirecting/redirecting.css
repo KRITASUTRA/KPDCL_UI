@@ -1,0 +1,55 @@
+.redirecting-to-billdesk1 {
+  margin: 0;
+}
+.redirecting-to-billdesk-container1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  display: inline-block;
+}
+.redirecting-to-billdesk-paymen1 {
+  position: absolute;
+  height: 37.26%;
+  width: 93.42%;
+  top: 6.91%;
+  right: 2.51%;
+  bottom: 55.83%;
+  left: 4.07%;
+}
+.please-do-not1 {
+  position: absolute;
+  top: 71.86%;
+  left: 24.34%;
+  font-size: 20.29px;
+  color: red;
+  font-weight: 600;
+  color: var(--color-red);
+}
+.redirecting-item {
+  position: absolute;
+  top: 124.27px;
+  left: 356.33px;
+  border-radius: 50%;
+  width: 83.69px;
+  height: 83.69px;
+  object-fit: cover;
+}
+.redirecting1 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 385.5px);
+  width: 771px;
+  height: 333.51px;
+}
+.redirecting-parent {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 333.51px;
+  text-align: center;
+  font-size: 25.36px;
+  color: var(--color-dimgray);
+  font-family: var(--font-open-sans);
+}
