@@ -1,0 +1,34 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+#main-container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+}
+#content-container{
+    width:73.54%;
+    height:auto;
+    margin-top:78.68px;
+}
+#content-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+}
+.accordion-button{
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight: 700;
+}
+.accordion-body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15.73px;
+    font-weight: 400;
+}

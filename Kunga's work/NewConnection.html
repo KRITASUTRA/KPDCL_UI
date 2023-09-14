@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./NewConnection.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main-container" class="my-5">
+      <div id="form-container">
+        <form>
+          <h2 class="mx-4">New Connection Application Form</h2>
+          <div class="row mb-3 mx-2">
+            <div class="col">
+              <label for="start-date" class="form-label">Start Date</label>
+              <input
+                type="text"
+                class="form-control form-control-sm form-control form-control-sm-sm custom-input"
+                placeholder="Enter date"
+                aria-label="start-date"
+              />
+            </div>
+            <div class="col">
+              <label for="start-time" class="form-label">Start Time</label>
+              <input
+                type="text"
+                class="form-control form-control-sm custom-input"
+                placeholder="Enter Time"
+                aria-label="start-time"
+              />
+            </div>
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="applicant" class="form-label"
+              >Applicant/ Organization Name</label
+            >
+           <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              id="applicant"
+              placeholder="Enter Name"
+            />
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="parentage" class="form-label"
+              >Parentage/Husband/Director/Partner/Trustee</label
+            >
+            <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              id="parentage"
+              placeholder="Enter Name"
+            />
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="address" class="form-label"
+              >Present address for commnication</label
+            >
+            <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              id="address"
+              placeholder="Enter Present Address"
+            />
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="newConnectionAddress" class="form-label"
+              >New Connection Address</label
+            >
+            <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              id="newConnectionAddress"
+              placeholder="Enter Connection Address"
+            />
+          </div>
+          <div class="row mb-3 mx-2">
+            <div class="col">
+              <label for="consumer-category" class="form-label"
+                >Consumer Category
+              </label>
+              <select
+                class="form-select form-select-sm custom-input"
+                aria-label="Default select example"
+              >
+                <option selected>Select consumer type</option>
+                <option value="domestic">Domestic</option>
+                <option value="commercial">Commercial</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="connection-type" class="form-label"
+                >Connection Type</label
+              >
+              <select
+                class="form-select form-select-sm custom-input"
+                aria-label="Default select example"
+              >
+                <option selected>Select connection type</option>
+                <option value="ht">HT</option>
+                <option value="lt">LT</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3 mx-2">
+            <div class="col">
+              <label for="plot-size" class="form-label"
+                >New Address Plot Size</label
+              >
+              <input
+                type="text"
+                class="form-control form-control-sm custom-input"
+                placeholder="in sq.feet"
+                aria-label="plot-size"
+              />
+            </div>
+            <div class="col">
+              <label for="covered-area" class="form-label"
+                >New Address Covered Area</label
+              >
+              <input
+                type="text"
+                class="form-control form-control-sm custom-input"
+                placeholder="in sq.feet"
+                aria-label="covered-area"
+              />
+            </div>
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="supply" class="form-label">Purpose of supply</label>
+            <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              id="supply"
+            />
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="load-applied" class="form-label"
+              >Total Load Applied For</label
+            >
+            <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              id="load-applied"
+            />
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="supply-type" class="form-label"
+              >Type Of Supply(Permanent/Temporary)</label
+            >
+            <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              id="supply-type"
+            />
+          </div>
+          <div class="mb-5 mx-4">
+            <div class="row">
+              <label for="temporary-supply" class="form-label"
+                >If Temporary Supply, Secify Period Of Requirement</label
+              >
+              <div class="col">
+                <label for="from" class="form-label"
+                  >From:<input
+                    type="date"
+                    class="form-control form-control-sm-inline ms-2 d-inline custom-input"
+                    aria-label="from"
+                /></label>
+              </div>
+              <div class="col">
+                <label for="to" class="form-label"
+                  >To:<input
+                    type="date"
+                    class="form-control form-control-sm-inline ms-2 d-inline custom-input"
+                    aria-label="to"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 mx-4">
+            <p>
+              Please indicate whether you want to carry out the works of laying
+              service line and/or dedicated distribution facility for the
+              electricity supply requisitioned.
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1 "
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                No
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn mx-2">Submit Application</button>
+        </form>
+      </div>
+      <div id="side-boxes">
+        <div id="upper-box">
+          <p>Proof of identification(POI)-Upload</p>
+          <ol>
+            <li>
+              Copy of latest bill duly paid
+              <img
+                src="./ph_upload-light.png"
+                style="float: right; margin-right: 13px"
+              />
+            </li>
+            <li>
+              Proof of ownership / legal occupancy of premises
+              <img
+                src="./ph_upload-light.png"
+                style="float: right; margin-right: 13px"
+              />
+            </li>
+            <li>
+              No Objection Certificate from the existing consumer if
+              available/possible
+              <img
+                src="./ph_upload-light.png"
+                style="float: right; margin-right: 13px"
+              />
+            </li>
+            <li>
+              Registered deed / Succession certificate
+              <img
+                src="./ph_upload-light.png"
+                style="float: right; margin-right: 13px"
+              />
+            </li>
+            <li>
+              Scanned copy of signature
+              <img
+                src="./ph_upload-light.png"
+                style="float: right; margin-right: 13px"
+              />
+            </li>
+            <li>
+              Proof of Indentification (Adhaar card/Election
+              card/Passport/Domicile)
+              <img
+                src="./ph_upload-light.png"
+                style="float: right; margin-right: 13px"
+              />
+            </li>
+            <li>If any other document, please specify:</li>
+          </ol>
+          <center>
+            <input
+              type="text"
+              class="form-control form-control-sm  w-25 me-3 d-inline custom-input"
+            />
+            <img src="./ph_upload-light.png" />
+          </center>
+        </div>
+        <div id="lower-box">
+          <p>Upload</p>
+          <div id="inner-box">
+            <img
+              src="./Upload icon.png"
+              alt=""
+              style="
+                width: 77.62px;
+                height: 56.59px;
+                align-self: center;
+                margin-top: 42px;
+              "
+            />
+            <p>
+              Drag & drop files or <a href="#" style="color: #0d67ca">Browse</a>
+            </p>
+            <p>
+              supported formats:JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT
+            </p>
+          </div>
+          <button type="button" class="btn pb-2">Upload Files</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

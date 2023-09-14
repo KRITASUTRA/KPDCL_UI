@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    width:1334px;
+    height:588px;
+    background-color: #fbfafa;
+    border-radius: 20px;
+    border: 0.5px solid #a1a0a0;
+}
+#content p{
+    margin-top:37px;
+    margin-left:37px;
+    font-size: 36px;
+    font-family: 'Open Sans-SemiBold', sans-serif;
+    font-weight: 600;
+}
+#download-links label>img{
+    width:26px;
+    height:26px;
+}
+#download-links label{
+    display: flex;
+    justify-content: space-between;
+    margin-top:37px;
+    margin-left:37px;
+    margin-right:37px;
+    font-size: 20px;
+    font-family: 'Open Sans-Regular', sans-serif;
+    font-weight: 400;
+}
+#download-links label button{
+    justify-self: end;
+    font-size: 16px;
+    font-family: 'Open Sans-Regular', sans-serif;
+    font-weight: 400;
+}
+#download-links label button:hover{
+    text-decoration: underline;
+}
