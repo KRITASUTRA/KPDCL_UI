@@ -30,7 +30,7 @@
 
         <!-- content-container -->
 
-        <div class="bg-light p-5 " style="width:80%;" id="dashboard-content" >
+        <div class="bg-light p-5 container-md"  id="dashboard-content" style=" display: none;">
             <!-- top-div -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <div class="mb-3 mb-md-0">
@@ -96,57 +96,45 @@
             </div>
             
             <!-- recent payments -->
-            <div class="bg-white mt-3">
+            <div class="bg-white mt-3 container-sm">
                 <div class="d-flex align-items-center justify-content-between p-2">
                     <h3>Recent Payments</h3>
                     <span class="text-primary bg-light px-3 py-2 rounded fw-bold">See All</span>
                 </div>
-                <div class="p-4">
-                <table class="w-100 p-2 text-center">
-                    <tr class=" fs-3 bg-light">
+                <!-- <div class="p-4"> -->
+                <table class="w-100 p-2 text-center table table-hover">
+                    <tr class=" fs-6 bg-light">
                         <th>Month</th>
                         <th>Amount</th>
                         <th>Transaction ID</th>
                         <th>Time</th>
                     </tr>
                     <tr class="py-4 bg-light mt-5 rounded">
-                        <td class="fs-5 py-3">APR-2023</td>
-                        <td class="fs-5">Rs.3000</td>
-                        <td class="fs-5">122113</td>
-                        <td class="fs-5">30s Ago</td>
+                        <td class="fs-6 py-3">APR-2023</td>
+                        <td class="fs-6">Rs.3000</td>
+                        <td class="fs-6">122113</td>
+                        <td class="fs-6">30s Ago</td>
                     </tr>
                     <tr class=" py-4 bg-light mt-5 rounded">
-                        <td class="fs-5 py-3">APR-2023</td>
-                        <td class="fs-5">Rs.3000</td>
-                        <td class="fs-5">122113</td>
-                        <td class="fs-5">30s Ago</td>
-                    </tr>
-                    <tr class=" py-4 bg-light">
-                        <td class="fs-5 py-3">APR-2023</td>
-                        <td class="fs-5">Rs.3000</td>
-                        <td class="fs-5">122113</td>
-                        <td class="fs-5">30s Ago</td>
-                    </tr>
-                    <tr class="py-4 bg-light">
-                        <td class="fs-5 py-3">APR-2023</td>
-                        <td class="fs-5">Rs.3000</td>
-                        <td class="fs-5">122113</td>
-                        <td class="fs-5">30s Ago</td>
+                        <td class="fs-6 py-3">APR-2023</td>
+                        <td class="fs-6">Rs.3000</td>
+                        <td class="fs-6">122113</td>
+                        <td class="fs-6">30s Ago</td>
                     </tr>
                 </table>
-            </div>
+            <!-- </div> -->
             </div>
         </div>
 
 
         <!-- bill-history -->
 
-        <div class="bg-light p-5 " style="width:80%; display: none;">
+        <div class="bg-light p-5 container-md" style="display: none;">
             <!-- top-div -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <div class="mb-3 mb-md-0">
-                    <div>Home/Dashboard</div>
-                    <div class="fs-2 fw-bold">Consumer Dashboard</div>
+                    <div>Home/Bills</div>
+                    <div class="fs-2 fw-bold">Bill History</div>
                 </div>
                 <div class="d-flex align-items-center">
                     <div class="bg-white rounded-circle px-2 text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
@@ -229,7 +217,7 @@
 
         <!-- ownership-change-request -->
 
-        <div class="bg-light p-5 custom-container" style="display: none; width: 80%" id="ownership-change-request-content">
+        <div class="bg-light p-5 container-md" style="display: none; width: 80%" id="ownership-change-request-content">
             <div class="container w-100">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                     <div class="mb-3 mb-md-0">
@@ -301,13 +289,13 @@
 
         <!-- name-change-request -->
 
-        <div class="bg-light p-5 custom-container " style="display: none;" id="name-change-request-content">
+        <div class="bg-light p-5 container-md " style="display: none;" id="name-change-request-content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div>
                             <div>Home/Name Change</div>
-                            <div class="fs-2 fw-bold">Ownership change</div>
+                            <div class="fs-2 fw-bold">Name change request</div>
                         </div>
                         <div class="d-flex align-items-center mt-4">
                             <div class="bg-white rounded-pill d-flex align-items-center p-2">
@@ -369,7 +357,7 @@
 
 <!-- consumer-code-content -->
 
-        <div class="bg-light p-5" style="width:80%; display: none;" id="consumer-code-content">
+        <div class="bg-light p-5 container-md" id="consumer-code-content" style="display: none;">
 
             <div class="d-flex justify-content-between">
                 <div>
@@ -386,10 +374,10 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-between mt-5 ">
-                <div class="bg-white p-4 rounded">
+            <div class="d-flex justify-content-between mt-5 flex-column flex-sm-row">
+                <div class="bg-white p-4 rounded mb-4 mb-sm-0">
                     <h3>Link-Up</h3>
-                    <p>Enter given required details to link new user</p>
+                    <p>Enter the required details to link a new user</p>
                     <form action="" class="d-flex flex-column">
                         <label for="">Consumer Code <span><i class="bi bi-asterisk text-danger"></i></span></label>
                         <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
@@ -400,57 +388,53 @@
                 </div>
                 <div class="bg-white p-4 rounded">
                     <h4>Previously Linked Connections</h4>
-                    <table class="text-center">
-                        <tr class="fs-3">
-                            <th class="px-3">Consumer ID</th>
-                            <th class="px-3">Installation Number</th>
-                            <th class="px-3">Name</th>
-                            <th class="px-3">Action</th>
-                        </tr>
-                        <tr class="fs-3">
-                            <td class="py-2">034353536</td>
-                            <td>12344</td>
-                            <td>Sharukh</td>
-                            <td><i class="bi bi-trash3 text-danger"></i></td>
-                        </tr>
-                        <tr class="fs-3">
-                            <td class="py-2">034353536</td>
-                            <td>12344</td>
-                            <td>Sharukh</td>
-                            <td><i class="bi bi-trash3 text-danger"></i></td>
-                        </tr>
-                        <tr class="fs-3">
-                            <td class="py-2">034353536</td>
-                            <td>12344</td>
-                            <td>Sharukh</td>
-                            <td><i class="bi bi-trash3 text-danger"></i></td>
-                        </tr>
-                        <tr class="fs-3 py-4">
-                            <td class="py-2">034353536</td>
-                            <td>12344</td>
-                            <td>Sharukh</td>
-                            <td><i class="bi bi-trash3 text-danger"></i></td>
-                        </tr>
-                        <tr class="fs-3">
-                            <td>034353536</td>
-                            <td>12344</td>
-                            <td>Sharukh</td>
-                            <td><i class="bi bi-trash3 text-danger"></i></td>
-                        </tr>
+                    <table class="table table-striped text-center">
+                        <thead class="fs-3">
+                            <tr>
+                                <th class="px-3">Consumer ID</th>
+                                <th class="px-3">Installation Number</th>
+                                <th class="px-3">Name</th>
+                                <th class="px-3">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="fs-3">
+                            <tr>
+                                <td class="py-2">034353536</td>
+                                <td>12344</td>
+                                <td>Sharukh</td>
+                                <td><i class="bi bi-trash3 text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">034353536</td>
+                                <td>12344</td>
+                                <td>Sharukh</td>
+                                <td><i class="bi bi-trash3 text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">034353536</td>
+                                <td>12344</td>
+                                <td>Sharukh</td>
+                                <td><i class="bi bi-trash3 text-danger"></i></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
+            
         </div> 
 
-        <div class="bg-light p-5" style="width:80%; display: none;" id="raise-ticket-content">
-            <div class="d-flex justify-content-between">
-                <div>
-                    <div>Home/Track</div>
-                    <div class="fs-2 fw-bold">Raise & Track your request</div>
+
+        <!-- track ticket -->
+
+        <div class="bg-light p-5 container-md" id="raise-ticket-content">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="mb-3 mb-md-0">
+                    <div>Home/Dashboard</div>
+                    <div class="fs-2 fw-bold">Consumer Dashboard</div>
                 </div>
-                <div class="d-flex align-items-center ">
-                    <div class="bg-white rounded-circle px-2  text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
-                    <div class= "bg-white rounded-pill d-flex align-items-center p-2">
+                <div class="d-flex align-items-center">
+                    <div class="bg-white rounded-circle px-2 text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
+                    <div class="bg-white rounded-pill d-flex align-items-center p-2">
                         <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
                             <i class="bi bi-search fs-6 me-2"></i>
                             <input type="text" placeholder="Search" class="border-0 bg-transparent">
@@ -459,8 +443,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex mt-5 " >
-                    <div class="bg-white p-4 rounded w-50"> 
+            <div class="d-flex mt-5 flex-column flex-sm-row container-md" >
+                    <div class="bg-white p-4 rounded  container-md"> 
                         <h3>Raise Ticket</h3>
                         <p>Enter given required details</p>
                         <form action="" class="d-flex flex-column">
@@ -479,7 +463,7 @@
                             <button class="bg-primary rounded-pill border-0 py-3 mt-3 text-white btn btn-primary">Submit</button>
                         </form>
                     </div>
-                    <div class="bg-white p-4 rounded w-50 ms-4 " style="height: fit-content;">
+                    <div class="bg-white p-4 rounded container-md ms-4 " style="height: fit-content;">
                         <h3>Track Ticket</h3>
                         <p>Enter given required details</p>
                         <form action="" class="d-flex flex-column">
