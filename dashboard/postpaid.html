@@ -30,16 +30,16 @@
 
         <!-- content-container -->
 
-        <div class="bg-light p-5 " style="width:80%; display: none;" id="dashboard-content" >
+        <div class="bg-light p-5 " style="width:80%;" id="dashboard-content" >
             <!-- top-div -->
-            <div class="d-flex justify-content-between">
-                <div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="mb-3 mb-md-0">
                     <div>Home/Dashboard</div>
                     <div class="fs-2 fw-bold">Consumer Dashboard</div>
                 </div>
-                <div class="d-flex align-items-center ">
-                    <div class="bg-white rounded-circle px-2  text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
-                    <div class= "bg-white rounded-pill d-flex align-items-center p-2">
+                <div class="d-flex align-items-center">
+                    <div class="bg-white rounded-circle px-2 text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
+                    <div class="bg-white rounded-pill d-flex align-items-center p-2">
                         <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
                             <i class="bi bi-search fs-6 me-2"></i>
                             <input type="text" placeholder="Search" class="border-0 bg-transparent">
@@ -141,16 +141,16 @@
 
         <!-- bill-history -->
 
-        <div class="bg-light p-5 " style="width:80%;">
+        <div class="bg-light p-5 " style="width:80%; display: none;">
             <!-- top-div -->
-            <div class="d-flex justify-content-between">
-                <div>
-                    <div>Home/Bills</div>
-                    <div class="fs-2 fw-bold">Bill history</div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="mb-3 mb-md-0">
+                    <div>Home/Dashboard</div>
+                    <div class="fs-2 fw-bold">Consumer Dashboard</div>
                 </div>
-                <div class="d-flex align-items-center ">
-                    <div class="bg-white rounded-circle px-2  text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
-                    <div class= "bg-white rounded-pill d-flex align-items-center p-2">
+                <div class="d-flex align-items-center">
+                    <div class="bg-white rounded-circle px-2 text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
+                    <div class="bg-white rounded-pill d-flex align-items-center p-2">
                         <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
                             <i class="bi bi-search fs-6 me-2"></i>
                             <input type="text" placeholder="Search" class="border-0 bg-transparent">
@@ -229,23 +229,26 @@
 
         <!-- ownership-change-request -->
 
-        <div class="bg-light p-5 custom-container" style="display: none;">
-            <div class="container">
+        <div class="bg-light p-5 custom-container" style="display: none; width: 80%" id="ownership-change-request-content">
+            <div class="container w-100">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="mb-3 mb-md-0">
+                        <div>Home/Dashboard</div>
+                        <div class="fs-2 fw-bold">Ownership Change Request</div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="bg-white rounded-circle px-2 text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
+                        <div class="bg-white rounded-pill d-flex align-items-center p-2">
+                            <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
+                                <i class="bi bi-search fs-6 me-2"></i>
+                                <input type="text" placeholder="Search" class="border-0 bg-transparent">
+                            </div>
+                            <img class="rounded-circle" style="height: 50px; width: 50px;" src="https://fastly.picsum.photos/id/1050/536/354.jpg?hmac=fjxUSeQRIROZvo_be9xEf-vMhMutXf2F5yw-WaWyaWA" alt="">
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div>
-                            <div>Home/Name Change</div>
-                            <div class="fs-2 fw-bold">Request for name change</div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <div class="bg-white rounded-pill d-flex align-items-center p-2">
-                                <div class="bg-light d-flex align-items-center mx-2 rounded-pill p-2">
-                                    <i class="bi bi-search fs-6 me-2"></i>
-                                    <input type="text" placeholder="Search" class="border-0 bg-transparent">
-                                </div>
-                                <img class="rounded-circle" style="height: 50px; width: 50px;" src="https://fastly.picsum.photos/id/1050/536/354.jpg?hmac=fjxUSeQRIROZvo_be9xEf-vMhMutXf2F5yw-WaWyaWA" alt="">
-                            </div>
-                        </div>
                         <div class="bg-white p-4 rounded mt-5">
                             <h3>e-application</h3>
                             <p>Enter given required details</p>
@@ -298,7 +301,7 @@
 
         <!-- name-change-request -->
 
-        <div class="bg-light p-5 custom-container " style="display: none;">
+        <div class="bg-light p-5 custom-container " style="display: none;" id="name-change-request-content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -494,5 +497,5 @@
 
     </div>
 </body>
-<script src="./index.js"></script>
+<script src="./postpaid.js"></script>
 </html>
