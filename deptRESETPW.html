@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset Password</title>
+    <style>
+        body {
+            background-color: #ffffff; /* White background */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .reset-password-container {
+            background-color: #f2f2f2;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005aad;
+        }
+
+        .reset-password-heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        /* Style for the label */
+        label {
+            color: blue;
+            text-align: left;
+            display: block;
+            font-weight: regular;
+            font-size: 12px;
+        }
+
+        #success-message {
+            color: green;
+            font-size: 16px;
+            margin-top: 10px;
+            display: none; /* Initially hidden */
+        }
+
+        #error-message {
+            color: red;
+            font-size: 16px;
+            margin-top: 10px;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <div class="reset-password-container">
+        <h2 class="reset-password-heading">Reset Password</h2>
+        <form action="reset_password_process.php" method="POST" onsubmit="return validateForm()">
+            <label for="new-password">New Password*</label>
+            <input type="password" id="new-password" name="new-password" placeholder="New Password" required><br><br>
+            <label for="confirm-password">Confirm Password*</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="success-message">Your password has been changed successfully.</div>
+        <div id="error-message">Passwords do not match. Please try again.</div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var newPassword = document.getElementById("new-password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            var successMessage = document.getElementById("success-message");
+            var errorMessage = document.getElementById("error-message");
+
+            if (newPassword === confirmPassword) {
+                successMessage.style.display = "block";
+                errorMessage.style.display = "none";
+                return true; // Allow form submission
+            } else {
+                successMessage.style.display = "none";
+                errorMessage.style.display = "block";
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

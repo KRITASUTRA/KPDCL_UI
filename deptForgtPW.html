@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+    <style>
+        body {
+            background-color: #ffffff; /* White background */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .forgot-password-container {
+            background-color: #f2f2f2;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .generate-otp-container {
+            text-align: center;
+            margin-left: 5px;
+        }
+
+        .generate-otp-button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            
+        }
+
+        .generate-otp-button:hover {
+            background-color: #005aad;
+        }
+
+        .forgot-password-heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+           /* Style for the label */
+        label {
+            color: blue;
+            text-align: left;
+            display: block;
+            font-weight: regular;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-password-container">
+        <h2 class="forgot-password-heading">Forgot Password</h2>
+        <form action="forgot_password_process.php" method="POST">
+            <label for="email">Email ID*</label>
+            <input type="text" id="email" name="email" placeholder="Email ID" required><br><br>
+            <label for="employee-id">Employee ID*</label>
+            <input type="text" id="employee-id" name="employee-id" placeholder="Employee ID" required><br><br>
+            <div class="generate-otp-container">
+                <button type="button" class="generate-otp-button">Generate OTP</button>
+            </div><br><br>
+        </form>
+    </div>
+</body>
+</html>

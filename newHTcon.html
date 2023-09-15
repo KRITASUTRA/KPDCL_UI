@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>High Tension New Connection Application</title>
+    <style>
+        /* Styling for the form container */
+        .form-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for the form header */
+        .form-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* Styling for form labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Styling for form inputs */
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Styling for form radio buttons */
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Styling for form submit button */
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto; /* Center the button horizontally */
+        }
+
+        /* Styling for bold points */
+        .point {
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Change the background color on hover */
+        }
+
+        /* Styling for the acknowledgment section */
+        .acknowledgment {
+            margin-top: 30px;
+        }
+
+        /* Styling for the checkbox label */
+        .checkbox-label {
+            display: block;
+        }
+
+        /* Styling for the separate acknowledgment frame */
+        .acknowledgment-frame {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Form Header -->
+        <div class="form-header">
+            <h1>High Tension New Connection Application</h1>
+        </div>
+
+        <!-- Application Form -->
+        <form action="submit_high_tension_application.php" method="post">
+            <!-- Fields -->
+            <div class="point">
+                <label for="applicant_name">1. Name of the Applicant/Organization:</label>
+                <input type="text" id="applicant_name" name="applicant_name" required>
+            </div>
+
+            <div class="point">
+                <label for="father_husband_name">2. Name of father/husband/Director/Partner/Trustee:</label>
+                <input type="text" id="father_husband_name" name="father_husband_name" required>
+            </div>
+
+            <!-- Address for communication -->
+            <div class="point">
+                <label for="communication_address">3. Address for communication:</label>
+                <input type="text" id="communication_address" name="communication_address" placeholder="House/Plot/Premise no." required>
+                <input type="text" id="street" name="street" placeholder="Street" required>
+                <input type="text" id="area_colony" name="area_colony" placeholder="Area/Colony" required>
+                <input type="text" id="district" name="district" placeholder="District" required>
+            </div>
+
+            <!-- Address where the new connection is applied for / existing connection is required to be shifted -->
+            <div class="point">
+                <label for="new_connection_address">4. Address where the new connection is applied for / existing connection is required to be shifted:</label>
+                <input type="text" id="new_connection_address" name="new_connection_address" placeholder="House/Plot/Premise no." required>
+                <input type="text" id="new_connection_street" name="new_connection_street" placeholder="Street" required>
+                <input type="text" id="new_connection_area_colony" name="new_connection_area_colony" placeholder="Area/Colony" required>
+                <input type="text" id="new_connection_district" name="new_connection_district" placeholder="District" required>
+                <label for="landmarks">Indicate landmarks to identify the location:</label>
+                <textarea id="landmarks" name="landmarks" rows="3" cols="30"></textarea>
+            </div>
+
+            <!-- Voltage at which supply is required -->
+            <div class="point">
+                <label for="voltage_required">5. Voltage at which supply is required (kV):</label>
+                <label for="category_11kv">11 kV</label>
+                <input type="radio" id="category_11kv" name="voltage_required" value="11 kV">
+                <label for="category_33kv">33 kV</label>
+                <input type="radio" id="category_33kv" name="voltage_required" value="33 kV">
+                <label for="category_132kv">132 kV</label>
+                <input type="radio" id="category_132kv" name="voltage_required" value="132 kV">
+                <label for="category_220kv">220 kV</label>
+                <input type="radio" id="category_220kv" name="voltage_required" value="220 kV">
+            </div>
+
+            <!-- Type of Supply (Permanent / Temporary) -->
+            <div class="point">
+                <label for="type_of_supply">6. Type of Supply (Permanent / Temporary):</label>
+                <input type="radio" id="permanent_supply" name="type_of_supply" value="Permanent" required>
+                <label for="permanent_supply">Permanent</label>
+                <input type="radio" id="temporary_supply" name="type_of_supply" value="Temporary">
+                <label for="temporary_supply">Temporary</label>
+            </div>
+
+            <!-- If Temporary supply, specify period of requirement -->
+            <div class="point">
+                <label for="temp_supply_start_date">6(a) If Temporary supply, specify period of requirement:</label>
+                From (date): <input type="date" id="temp_supply_start_date" name="temp_supply_start_date">
+                To (date): <input type="date" id="temp_supply_end_date" name="temp_supply_end_date">
+            </div>
+
+            <!-- Total Contract Demand applied for (in kW / kVA) -->
+            <div class="point">
+                <label for="total_contract_demand">7. Total Contract Demand applied for (in kW / kVA):</label>
+                <input type="number" id="total_contract_demand" name="total_contract_demand">
+            </div>
+
+            <!-- Basis for projection of Contract Demand - Diversity Factor assumed -->
+            <div class="point">
+                <label for="diversity_factor">8. Basis for projection of Contract Demand - Diversity Factor assumed:</label>
+                <input type="text" id="diversity_factor" name="diversity_factor">
+            </div>
+
+            <!-- Phasing of Contract Demand required (Yes/No) -->
+            <div class="point">
+                <label for="phasing_required">9. Phasing of Contract Demand required (Yes/No):</label>
+                <input type="radio" id="phasing_yes" name="phasing_required" value="Yes">
+                <label for="phasing_yes">Yes</label>
+                <input type="radio" id="phasing_no" name="phasing_required" value="No">
+                <label for="phasing_no">No</label>
+            </div>
+
+            <!-- Provide phasing details if Yes -->
+            <div class="point">
+                <label> If Yes, then provide the following details in the given format:</label>
+                <div>
+                    <label for="phasing_1">CD required (kVA) along with remarks, if any</label>
+                    <input type="text" id="phasing_1" name="phasing_1">
+                    <label for="phasing_2">Tentative Date from which required</label>
+                    <input type="date" id="phasing_2" name="phasing_2">
+                </div>
+                <div>
+                    <label for="phasing_3">CD required (kVA) along with remarks, if any</label>
+                    <input type="text" id="phasing_3" name="phasing_3">
+                    <label for="phasing_4">Tentative Date from which required</label>
+                    <input type="date" id="phasing_4" name="phasing_4">
+                </div>
+                <div>
+                    <label for="phasing_5">CD required (kVA) along with remarks, if any</label>
+                    <input type="text" id="phasing_5" name="phasing_5">
+                    <label for="phasing_6">Tentative Date from which required</label>
+                    <input type="date" id="phasing_6" name="phasing_6">
+                </div>
+            </div>
+
+            <!-- Purpose of Installation -->
+            <div class="point">
+                <label for="purpose_of_installation">10. Purpose of Installation:</label>
+                <input type="text" id="purpose_of_installation" name="purpose_of_installation">
+            </div>
+
+            <!-- Category of Tariff opted for -->
+            <div class="point">
+                <label for="category_of_tariff">11. Category of Tariff opted for:</label>
+                <input type="text" id="category_of_tariff" name="category_of_tariff">
+            </div>
+
+            <!-- Production capacity -->
+            <div class="point">
+                <label for="production_capacity">12. Production capacity:</label>
+                <input type="text" id="production_capacity" name="production_capacity">
+            </div>
+
+            <!-- Category of Industry -->
+            <div class="point">
+                <label for="category_of_industry">13. Category of Industry (Tick the applicable one):</label>
+                <label for="ssi">SSI</label>
+                <input type="radio" id="ssi" name="category_of_industry" value="SSI">
+                <label for="msi">MSI</label>
+                <input type="radio" id="msi" name="category_of_industry" value="MSI">
+                <label for="lsi">LSI</label>
+                <input type="radio" id="lsi" name="category_of_industry" value="LSI">
+            </div>
+
+            <!-- Type of unit -->
+            <div class="point">
+                <label for="type_of_unit">Type of unit:</label>
+                <input type="text" id="type_of_unit" name="type_of_unit">
+            </div>
+
+            <!-- Name of Institution developing Industrial Premises -->
+            <div class="point">
+                <label for="institution_name">14. Name of Institution developing Industrial Premises:</label>
+                <input type="text" id="institution_name" name="institution_name">
+            </div>
+
+            <!-- Possession Letter or No-Objection Certificate -->
+            <div class="point">
+                <label>15(a) Possession Letter or No-Objection Certificate issued by the Institution (attach a copy):</label>
+                <label for="noc_number">Number:</label>
+                <input type="text" id="noc_number" name="noc_number">
+                <label for="noc_date">Date:</label>
+                <input type="date" id="noc_date" name="noc_date">
+            </div>
+
+            <!-- Supply through an independent feeder -->
+            <div class="point">
+                <label for="independent_feeder">16. Whether supply is needed through an independent feeder:</label>
+                <input type="radio" id="feeder_yes" name="independent_feeder" value="Yes">
+                <label for="feeder_yes">Yes</label>
+                <input type="radio" id="feeder_no" name="independent_feeder" value="No">
+                <label for="feeder_no">No</label>
+            </div>
+
+            <!-- Whether the above unit ever operated at some other place or applied for connection -->
+            <div class="point">
+                <label for="operated_elsewhere">17. Whether the above unit ever operated at some other place or applied for connection?</label>
+                <label for="arrears_payment">Arrears of payment (if any):</label>
+                <input type="radio" id="operated_yes" name="operated_elsewhere" value="Yes">
+                <label for="operated_yes">Yes</label>
+                <input type="radio" id="operated_no" name="operated_elsewhere" value="No">
+                <label for="operated_no">No</label>
+                <input type="text" id="arrears_payment" name="arrears_payment">
+            </div>
+
+            <!-- Electricity connection for the premises was requested in the past -->
+            <div class="point">
+                <label for="past_connection">18. If electricity connection for the premises was requested in the past?</label>
+                <label for="unit_name">Name of unit:</label>
+                <input type="text" id="unit_name" name="unit_name">
+                <label for="service_connection_no">Service Connection No.:</label>
+                <input type="text" id="service_connection_no" name="service_connection_no">
+                <label for="arrears_payment_past">Arrears of payment (if any):</label>
+                <input type="text" id="arrears_payment_past" name="arrears_payment_past">
+            </div>
+
+            <!-- Status of land acquisition -->
+            <div class="point">
+                <label for="land_acquisition">19. Status of land acquisition:</label>
+                <input type="text" id="land_acquisition" name="land_acquisition">
+            </div>
+
+            <!-- Expected date by which finance will be available -->
+            <div class="point">
+                <label for="finance_date">20. Expected date by which finance will be available:</label>
+                <input type="date" id="finance_date" name="finance_date">
+            </div>
+
+            <!-- Consent / NOC from Pollution Control Board -->
+            <div class="point">
+                <label for="pollution_control_noc">21. Whether the requisite consent / NOC (if applicable as per the list of Pollution Control Board) has been obtained from:</label>
+                <input type="text" id="pollution_control_noc" name="pollution_control_noc">
+                <label for="noc_copy">If yes, attach a copy:</label>
+                <input type="file" id="noc_copy" name="noc_copy">
+            </div>
+
+            <!-- Any electricity dues outstanding questions -->
+            <div class="point">
+                <label for="dues_outstanding_22">22. Any electricity dues outstanding in Licensee’s area of operation in consumer’s name:</label>
+                <input type="radio" id="dues_outstanding_yes_22" name="dues_outstanding_22" value="Yes">
+                <label for="dues_outstanding_yes_22">Yes</label>
+                <input type="radio" id="dues_outstanding_no_22" name="dues_outstanding_22" value="No">
+                <label for="dues_outstanding_no_22">No</label>
+            </div>
+
+            <div class="point">
+                <label for="dues_outstanding_23">23. Any electricity dues outstanding for the premises for which connection applied for:</label>
+                <input type="radio" id="dues_outstanding_yes_23" name="dues_outstanding_23" value="Yes">
+                <label for="dues_outstanding_yes_23">Yes</label>
+                <input type="radio" id="dues_outstanding_no_23" name="dues_outstanding_23" value="No">
+                <label for="dues_outstanding_no_23">No</label>
+            </div>
+
+            <div class="point">
+                <label for="dues_outstanding_24">24. Any electricity dues outstanding with the Licensee against any firm with which the consumer is associated as an Owner, Partner, Director, or Managing Director:</label>
+                <input type="radio" id="dues_outstanding_yes_24" name="dues_outstanding_24" value="Yes">
+                <label for="dues_outstanding_yes_24">Yes</label>
+                <input type="radio" id="dues_outstanding_no_24" name="dues_outstanding_24" value="No">
+                <label for="dues_outstanding_no_24">No</label>
+            </div>
+        </form>
+    </div>
+
+    <!-- Separate Acknowledgment Section -->
+    <div class="acknowledgment-frame">
+        <h2>Acknowledgment Section</h2>
+        <div class="acknowledgment">
+            <label class="checkbox-label" for="acknowledge">I acknowledge that the information provided in this application is true to my knowledge, and I agree to abide by the conditions mentioned in the Electricity Supply Code. I will deposit electricity dues as per the applicable tariff and own the responsibility of security and safety of the meter, cut-out, and the installation thereafter.</label>
+        </div>
+        <input type="checkbox" id="acknowledge" name="acknowledge" required>
+    </div>
+</body>
+</html>

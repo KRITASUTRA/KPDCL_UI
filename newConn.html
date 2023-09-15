@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LT New Connection Application</title>
+    <style>
+        /* Styling for the form container */
+        .form-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for the form header */
+        .form-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* Styling for form labels */
+        label {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for form inputs */
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Styling for form radio buttons */
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Styling for form submit button */
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto; /* Center the button horizontally */
+        }
+
+        /* Styling for bold points */
+        .point {
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Change the background color on hover */
+        }
+
+        /* Styling for the acknowledgment section */
+        .acknowledgment {
+            margin-top: 10px;
+        }
+
+        /* Styling for the checkbox label */
+        .checkbox-label {
+            display: block;
+        }
+
+        /* Styling for the separate acknowledgment frame */
+        .acknowledgment-frame {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Form Header -->
+        <div class="form-header">
+            <h1>LT New Connection Application</h1>
+        </div>
+
+        <!-- Application Form -->
+        <form action="submit_lt_application.php" method="post">
+            <!-- Fields -->
+            <div class="point">
+                <label for="applicant_name">1. Name of the Applicant/Organization:</label>
+                <input type="text" id="applicant_name" name="applicant_name" required>
+            </div>
+
+            <div class="point">
+                <label for="father_husband_name">2. Name of father/husband/Director/Partner/Trustee:</label>
+                <input type="text" id="father_husband_name" name="father_husband_name" required>
+            </div>
+
+            <!-- Address -->
+            <div class="point">
+                <label for="communication_address">(a) For communication:</label>
+                <input type="text" id="communication_address" name="communication_address" placeholder="House/Plot/Premise no." required>
+                <input type="text" id="street" name="street" placeholder="Street" required>
+                <input type="text" id="area_colony" name="area_colony" placeholder="Area/Colony" required>
+                <input type="text" id="district" name="district" placeholder="District" required>
+                <label for="telephone_number">Telephone No.:</label>
+                <input type="tel" id="telephone_number" name="telephone_number">
+            </div>
+
+            <!-- New Connection Address -->
+            <div class="point">
+                <label for="new_connection_address">(b) Where the new connection is applied for / existing connection is required to be shifted:</label>
+                <input type="text" id="new_connection_address" name="new_connection_address" placeholder="House/Plot/Premise no." required>
+                <input type="text" id="new_connection_street" name="new_connection_street" placeholder="Street" required>
+                <input type="text" id="new_connection_area_colony" name="new_connection_area_colony" placeholder="Area/Colony" required>
+                <input type="text" id="new_connection_district" name="new_connection_district" placeholder="District" required>
+                <label for="landmarks">Indicate landmarks to identify the location:</label>
+                <textarea id="landmarks" name="landmarks" rows="3" cols="30"></textarea>
+            </div>
+
+            <!-- Plot size and Covered area -->
+            <div class="point">
+                <label for="plot_size">4. Plot size (sq. feet):</label>
+                <input type="number" id="plot_size" name="plot_size">
+            </div>
+
+            <div class="point">
+                <label for="category_of_supply">5. Category of Supply:</label>
+                <select id="category_of_supply" name="category_of_supply">
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Industrial">Industrial</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="point">
+                <label for="purpose_of_supply">6. Purpose of Supply:</label>
+                <input type="text" id="purpose_of_supply" name="purpose_of_supply">
+            </div>
+
+            <div class="point">
+                <label for="total_load">7. Total Load applied for (in kW):</label>
+                <input type="number" id="total_load" name="total_load">
+            </div>
+
+            <!-- Type of Supply (Permanent / Temporary) -->
+            <div class="point">
+                <label for="type_of_supply">8. Type of Supply (Permanent / Temporary):</label>
+                <input type="radio" id="permanent_supply" name="type_of_supply" value="Permanent" required>
+                <label for="permanent_supply">Permanent</label>
+                <input type="radio" id="temporary_supply" name="type_of_supply" value="Temporary">
+                <label for="temporary_supply">Temporary</label>
+            </div>
+
+            <!-- If Temporary supply, specify period of requirement -->
+            <div class="point">
+                <label for="temp_supply_start_date">8(a) If Temporary supply, specify period of requirement:</label>
+                From (date): <input type="date" id="temp_supply_start_date" name="temp_supply_start_date"> <br></br>
+                To (date): <input type="date" id="temp_supply_end_date" name="temp_supply_end_date">
+            </div>
+
+            <!-- Works of laying service line and/or dedicated distribution facility -->
+            <div class="point">
+                <label for="laying_service_line">9. Works of laying service line and/or dedicated distribution facility (Yes/No):</label>
+                <input type="radio" id="laying_service_line_yes" name="laying_service_line" value="Yes">
+                <label for="laying_service_line_yes">Yes</label>
+                <input type="radio" id="laying_service_line_no" name="laying_service_line" value="No">
+                <label for="laying_service_line_no">No</label>
+            </div>
+
+            <!-- Install your own CEA approved meter -->
+            <div class="point">
+                <label for="own_meter">10. Install your own CEA approved meter (Yes/No):</label>
+                <input type="radio" id="own_meter_yes" name="own_meter" value="Yes">
+                <label for="own_meter_yes">Yes</label>
+                <input type="radio" id="own_meter_no" name="own_meter" value="No">
+                <label for="own_meter_no">No</label>
+            </div>
+
+           
+            <!-- Particulars of any running connection/previous connection -->
+            <div class="point">
+                <label for="running_connection">11. Particulars of any running connection/previous connection on the name of the applicant:</label>
+                <input type="text" id="running_connection" name="running_connection">
+            </div>
+
+            <!-- Any electricity dues outstanding questions -->
+            <div class="point">
+                <label>12. Any electricity dues outstanding in Licensee’s area of operation in consumer’s name:</label>
+                <input type="radio" id="dues_outstanding_yes_13" name="dues_outstanding_13" value="Yes">
+                <label for="dues_outstanding_yes_13">Yes</label>
+                <input type="radio" id="dues_outstanding_no_13" name="dues_outstanding_13" value="No">
+                <label for="dues_outstanding_no_13">No</label>
+            </div>
+
+            <div class="point">
+                <label>13. Any electricity dues outstanding for the premises for which connection applied for:</label>
+                <input type="radio" id="dues_outstanding_yes_14" name="dues_outstanding_14" value="Yes">
+                <label for="dues_outstanding_yes_14">Yes</label>
+                <input type="radio" id="dues_outstanding_no_14" name="dues_outstanding_14" value="No">
+                <label for="dues_outstanding_no_14">No</label>
+            </div>
+
+            <div class="point">
+                <label>14. Any electricity dues outstanding with the Licensee against any firm with which the consumer is associated as an Owner, Partner, Director, or Managing Director:</label>
+                <input type="radio" id="dues_outstanding_yes_15" name="dues_outstanding_15" value="Yes">
+                <label for="dues_outstanding_yes_15">Yes</label>
+                <input type="radio" id="dues_outstanding_no_15" name="dues_outstanding_15" value="No">
+                <label for="dues_outstanding_no_15">No</label>
+            </div>
+    
+            
+        </form>
+    </div>
+
+    <!-- Separate Acknowledgment Section -->
+    <div class="acknowledgment-frame">
+        <h2>Acknowledgment Section</h2>
+        <div class="acknowledgment">
+            <label class="checkbox-label" for="acknowledge">I acknowledge that the information provided in this application is true to my knowledge, and I agree to abide by the conditions mentioned in the Electricity Supply Code. I will deposit electricity dues as per the applicable tariff and own the responsibility of security and safety of the meter, cut-out, and the installation thereafter.</label>
+        </div>
+        <input type="checkbox" id="acknowledge" name="acknowledge" required>
+    </div>
+     <!-- Submit Button -->
+     <div class="point">
+        <input type="submit" value="Submit Application">
+    </div>
+</body>
+</html>

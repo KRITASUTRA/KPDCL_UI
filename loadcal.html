@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Load Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9f9f9, #ffa07a); /* Gradient background */
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .calculator {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 70px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #ffa07a, #ff8c66);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .calculator label[for="quantity"] {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Electricity Load Calculator</h1>
+    <div class="calculator">
+        <form id="loadCalculatorForm">
+            <label for="appliance">Select Appliance:</label>
+            <select id="appliance" name="appliance">
+                <option value="light">Light</option>
+                <option value="fan">Fan</option>
+                <option value="tv">TV</option>
+                <!-- Add more appliances as needed -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" placeholder="Enter quantity (e.g., 3)">
+
+            <label for="hours">Hours of Usage per Day:</label>
+            <input type="text" id="hours" name="hours" placeholder="Enter hours (e.g., 5)">
+
+            <input type="submit" value="Calculate">
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById("loadCalculatorForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const appliance = document.getElementById("appliance").value;
+            const quantity = parseFloat(document.getElementById("quantity").value);
+            const hours = parseFloat(document.getElementById("hours").value);
+
+            if (!isNaN(quantity) && !isNaN(hours)) {
+                const powerConsumption = calculatePowerConsumption(appliance, quantity, hours);
+                document.getElementById("result").innerHTML = `Total power consumption for ${quantity} ${appliance}(s) is ${powerConsumption} Watts.`;
+            } else {
+                document.getElementById("result").innerHTML = "Please enter valid numeric values.";
+            }
+        });
+
+        function calculatePowerConsumption(appliance, quantity, hours) {
+            // Add power consumption values for each appliance
+            const powerConsumptionMap = {
+                "light": 10,
+                "fan": 50,
+                "tv": 100
+                // Add more appliances and their power consumption values here
+            };
+
+            if (appliance in powerConsumptionMap) {
+                return quantity * powerConsumptionMap[appliance] * hours;
+            } else {
+                return 0;
+            }
+        }
+    </script>
+</body>
+</html>

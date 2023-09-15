@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subdivision Locator</title>
+    <style>
+        body {
+            background-image: url('https://542partners.com.au/wp-content/uploads/2015/07/maps-local-search1-ss-1920.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin to make it full-page */
+            padding: 0; /* Remove default padding to make it full-page */
+        }
+
+        .header-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent background color for the header */
+            padding: 20px;
+            border-radius: 10px;
+            position: absolute; /* Position relative to the body */
+            top: 20px; /* Adjust the top position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+        }
+
+        h1 {
+            color: blue; /* Set the color to a contrasting color like blue */
+            font-size: 24px; /* Increase the font size for better visibility */
+        }
+
+        #locator-form {
+            margin-top: 150px;
+            background-color: rgba(255, 255, 255, 0.8); /* Background color for the form with opacity */
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Sub-Division Locator</h1>
+    </div>
+    <form id="locator-form" action="locate_subdivision.php" method="POST">
+        <label for="consumerCode">Enter the first six digits of your consumer code:</label>
+        <input type="text" id="consumerCode" name="consumerCode" placeholder="123456" maxlength="6" required><br><br>
+        <input type="submit" value="Locate Subdivision">
+    </form>
+</body>
+</html>
