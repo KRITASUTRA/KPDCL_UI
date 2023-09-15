@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Default styles (for screens wider than 768px) */
 body {
   font-family: Arial, sans-serif;
 }
@@ -31,7 +30,7 @@ body {
 .form-div {
   flex: 0 0 40%;
   width: 100%;
-  max-width: 600px; /* Adjust the maximum width for smaller screens */
+  max-width: 600px; 
   height: 80%;
   padding: 20px;
   border-radius: 30px;
@@ -46,20 +45,19 @@ body {
     0px 5px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* Media query for screens smaller than or equal to 768px */
 @media (max-width: 768px) {
   .parent-div {
-    flex-direction: column; /* Stack the child divs vertically */
+    flex-direction: column; 
   }
 
   .image-div {
-    display: none; /* Adjust the height as needed */
+    display: none; 
   }
 
   .form-div {
-    flex: 1; /* Take full width */
-    max-width: none; /* Remove the maximum width */
-    margin-top: 20px; /* Add some spacing between the divs */
+    flex: 1; 
+    max-width: none; 
+    margin-top: 20px; 
   }
 }
 

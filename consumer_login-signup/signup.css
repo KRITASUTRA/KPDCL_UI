@@ -1,4 +1,4 @@
-/* CSS from the <style> tag in the HTML */
+
 * {
     margin: 0;
     padding: 0;
@@ -85,7 +85,6 @@ body {
     letter-spacing: -0.32px;
 }
 
-/* CSS from the external "signup.css" file */
 .input-container {
     position: relative;
     width: 100%;
@@ -175,37 +174,32 @@ body {
     margin-top: 10px;
     color: #888;
 }
-/* Small screens */
 @media screen and (max-width: 768px) {
     .parent-div {
-        flex-direction: column; /* Stack elements vertically */
-        width: 100%; /* Full width */
+        flex-direction: column; 
+        width: 100%; 
         margin: 0;
         padding: 20px;
-        height: auto; /* Adjust height as needed */
+        height: auto; 
     }
 
     .image-div {
-        flex: 1; /* Take up full width */
+        flex: 1; 
         height: auto;
     }
 
     .form-div {
-        flex: 1; /* Take up full width */
-        height: auto; /* Adjust height as needed */
-        border-radius: 0; /* Remove border radius */
-        margin-top: 20px; /* Add some space between sections */
+        flex: 1; 
+        height: auto; 
+        border-radius: 0; 
+        margin-top: 20px; 
     }
     
-    /* Add more adjustments for smaller screens as needed */
 }
 
-/* Medium screens */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-    /* Add your medium screen styles here */
+   
 }
 
-/* Large screens */
 @media screen and (min-width: 1201px) {
-    /* Add your large screen styles here */
 }
