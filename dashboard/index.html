@@ -11,7 +11,7 @@
     <!-- main-container -->
     <div class="d-flex justify-content-between">
         <!-- sidebar -->
-        <div class=" d-xxl-flex d-none  flex-column justify-content-between vh-100 position-sticky top-0 " style="width: 20%;">
+        <div class="sidebar d-xxl-flex d-none  flex-column justify-content-between vh-100  top-0 " style="width: 20%; position: sticky;">
             <div class="d-flex flex-column align-items-center">
                 <h3 class="p-4 text-primary fw-bold fs-3">Bill Sahuliyat</h3>
                 <div class="w-100 d-flex  p-3 align-items-center" id="dashboard"><span><i class="bi bi-house-door-fill fs-4 text-secondary"></i></span><button class="border-0  bg-transparent ms-2 fs-5 text-secondary">Dashboard</button></div>
@@ -26,9 +26,15 @@
             </div>
         </div>
 
+        <!-- hamburger -->
+
+        <i class="bi bi-list fs-1 position-absolute d-flex d-xxl-none" style="cursor: pointer;" id="sidebar"></i>
+
+
+
         <!-- content-container -->
 
-        <div class="bg-light p-5 " style="width:80%;" id="dashboard-content" >
+        <div class="bg-light p-5 container-md" id="dashboard-content" >
             <!-- top-div -->
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <div class="mb-3 mb-md-0">
@@ -100,7 +106,7 @@
                     <h3 class="mb-0">Recent Payments</h3>
                     <span class="text-primary bg-light px-3 py-2 rounded fw-bold">See All</span>
                 </div>
-                <div class="p-2 p-md-4">
+                <div class="p-2 p-md-4 overflow-scroll">
                     <table class="table table-responsive">
                         <thead class="bg-light">
                             <tr class="fs-6">
@@ -144,7 +150,7 @@
 
         <!-- name-change-request -->
 
-        <div class="bg-light p-5 custom-container" style="display: none;" id="name-change-request-content">
+        <div class="bg-light p-5 container-md" style="display: none;" id="name-change-request-content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -261,12 +267,12 @@
 
 <!-- consumer-code-content -->
 
-        <div class="bg-light p-5" style="width:80%; display: none;" id="consumer-code-content">
+        <div class="bg-light p-5 container-md" style=" display: none;" id="consumer-code-content">
 
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <div class="mb-3 mb-md-0">
-                    <div>Home/Dashboard</div>
-                    <div class="fs-2 fw-bold">Consumer Dashboard</div>
+                    <div>Home/Link</div>
+                    <div class="fs-2 fw-bold">Link Consumer ID</div>
                 </div>
                 <div class="d-flex align-items-center">
                     <div class="bg-white rounded-circle px-2 text-primary me-2"><i class="bi bi-bell fs-1"></i></div>
@@ -279,7 +285,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-between mt-5 ">
+            <div class="d-md-flex justify-content-between mt-5 ">
                 <div class="bg-white p-4 rounded">
                     <h3>Link-Up</h3>
                     <p>Enter given required details to link new user</p>
@@ -291,7 +297,7 @@
                         <button class="bg-primary rounded-pill border-0 py-3 mt-3 text-white btn btn-primary">Link User</button>
                     </form>
                 </div>
-                <div class="bg-white p-4 rounded">
+                <div class="bg-white p-4 rounded overflow-scroll container-md">
                     <h4>Previously Linked Connections</h4>
                     <table class="text-center">
                         <tr class="fs-3">

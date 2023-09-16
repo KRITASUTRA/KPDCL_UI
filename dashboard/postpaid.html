@@ -11,11 +11,11 @@
     <!-- main-container -->
     <div class="d-flex justify-content-between">
         <!-- sidebar -->
-        <div class=" d-xxl-flex d-none  flex-column justify-content-between vh-100 position-sticky top-0 " style="width: 20%;">
+        <div class="sidebar d-xxl-flex d-none  flex-column justify-content-between vh-100  top-0 " style="width: 20%; position: sticky;" >
             <div class="d-flex flex-column align-items-center">
                 <h3 class="p-4 text-primary fw-bold fs-3">Bill Sahuliyat</h3>
                 <div class="w-100 d-flex  p-3 align-items-center" id="dashboard"><span><i class="bi bi-house-door-fill fs-4 text-secondary"></i></span><button class="border-0  bg-transparent ms-2 fs-5 text-secondary">Dashboard</button></div>
-                <div class="w-100 d-flex p-3" id="track-request"><span><i class="bi bi-file-earmark-bar-graph-fill fs-4 text-secondary"></i></span><button class="border-0  bg-transparent ms-2 fs-5 text-secondary">Bill history</button></div>
+                <div class="w-100 d-flex p-3" id="track-request"><span><i clas  s="bi bi-file-earmark-bar-graph-fill fs-4 text-secondary"></i></span><button class="border-0  bg-transparent ms-2 fs-5 text-secondary">Bill history</button></div>
                 <div class="w-100 d-flex p-3" id="consumer-code"><span><i class="bi bi-person-square fs-4 text-secondary"></i></span><button class="border-0  bg-transparent ms-2 fs-5 text-secondary">Link Customer Code</button></div>
                 <div class="w-100 d-flex p-3" id="name-change-request"><span><i class="bi bi-file-earmark-bar-graph-fill fs-4 text-secondary"></i></span><button class="border-0  bg-transparent ms-2 fs-5 text-secondary">Name Change Request</button></div>
                 <div class="w-100 d-flex p-3" id="ownership-change-request"><span><i class="bi bi-file-earmark-bar-graph-fill fs-4 text-secondary"></i></span><button class="border-0  bg-transparent ms-2 fs-5 text-secondary">Ownership Change Request</button></div>
@@ -27,6 +27,10 @@
                 <div><button class=" btn btn-primary bg-primary text-white border-0  rounded-pill px-5 py-2 mt-3 fw-bold">Logout</button></div>
             </div>
         </div>
+        
+        <!-- hamburger -->
+
+            <i class="bi bi-list fs-1 position-absolute d-flex d-xxl-none" style="cursor: pointer;" id="sidebar"></i>
 
         <!-- content-container -->
 
@@ -451,7 +455,7 @@
                             <label for="">Consumer Code <span><i class="bi bi-asterisk text-danger"></i></span></label>
                             <input type="text" name="" id="" style="height: 50px;" class="rounded mt-2">
                             <label for="">Select Problem Category:</label>
-                            <select name="" id="" style="height: 50px;" class="rounded mt-4">
+                            <select name="" id="" style="height: 50px;" class="rounded mt-4 form-select">
                                 <option value="">Select Option</option>
                                 <option value="">1</option>
                                 <option value="">1</option>
@@ -481,5 +485,6 @@
 
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./postpaid.js"></script>
 </html>

@@ -52,3 +52,20 @@ trackRequest.addEventListener("click",()=>{
     dashboardContent.style.display = "none";
     raiseTicketContent.style.display = "block";
 });
+
+const hamburger = document.querySelector(".bi-list");
+const sidebar = document.querySelector(".sidebar");
+
+hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('d-none');
+    sidebar.style.position = "fixed";
+    sidebar.style.background = "white";
+    sidebar.style.width = "60%";
+});
+
+const body = document.querySelector("body");
+    body.addEventListener("click",(e)=>{
+        if(e.target.id != "sidebar"){
+            sidebar.classList.add('d-none');
+        }
+})
