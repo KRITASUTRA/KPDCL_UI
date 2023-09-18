@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    width:100%;
+    height:100%;
+}
+.background-light-dark{
+    background-color: #fbfafa;
+}
+.vstack>div:nth-child(n){
+    /* border:1px solid rgba(0,0,0,.4) ; */
+    box-shadow:.2rem .5rem .6rem 0 rgba(0,0,0,.3);
+    border:outset;
+    border:1px solid  rgb(184, 182, 182);
+}
