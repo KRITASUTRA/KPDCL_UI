@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body::before {
+    content: "";
+    background-image: url('./img/frame-130.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.18; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .odd-row .animate-text {
+    animation: fadeInLeft 0.5s ease-in-out;
+  }
+
+  .odd-row .animate-image {
+    animation: fadeInRight 0.5s ease-in-out;
+  }
+
+  .even-row .animate-text {
+    animation: fadeInRight 0.5s ease-in-out;
+  }
+
+  .even-row .animate-image {
+    animation: fadeInLeft 0.5s ease-in-out;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
+<body>
+    <div class="container">
+
+        <div class="row odd-row">
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+        </div>
+  
+        
+        
+        <div class="row even-row">
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+        </div>
+
+        <div class="row odd-row">
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+        </div>
+  
+        
+        
+        <div class="row even-row">
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+        </div>
+
+
+        <div class="row odd-row">
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+        </div>
+  
+        
+        
+        <div class="row even-row">
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+        </div>
+
+        <div class="row odd-row">
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+        </div>
+  
+        
+        
+        <div class="row even-row">
+            <div class="col-md-6 animate-image">
+                <img src="./img/frame-130.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 animate-text">
+                <h1>Choose Energy Saving Lights</h1>
+                <p>Replacing 5 of your home’s most frequently used lights with LEDs.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
