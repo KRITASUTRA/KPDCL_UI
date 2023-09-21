@@ -19,7 +19,7 @@ body {
   margin: 50px auto;
 }
 
-.image-div {
+.login-image-div {
   flex: 0 0 60%;
   width: 100%;
   height: 100%;
@@ -27,7 +27,7 @@ body {
   background: #ffffffff url("../public/vecteezy-flatisometricconceptillustrationhousewithsolarpanel-7885716-1@2x.png") 50% / cover no-repeat;
 }
 
-.form-div {
+.login-form-div {
   flex: 0 0 40%;
   width: 100%;
   max-width: 600px; 
@@ -50,37 +50,37 @@ body {
     flex-direction: column; 
   }
 
-  .image-div {
+  .login-image-div {
     display: none; 
   }
 
-  .form-div {
+  .login-form-div {
     flex: 1; 
     max-width: none; 
     margin-top: 20px; 
   }
 }
 
-.form-div .login-signup-flex,
-.form-div .text-01,
-.form-div .email-div,
-.form-div .password-div,
-.form-div .checkbox-forgot,
-.form-div .login-btn,
-.form-div .signin-using,
-.form-div .social-icons,
-.form-div .dont-have-account {
+.login-form-div .login-signup-flex,
+.login-form-div .login-text-01,
+.login-form-div .login-email-div,
+.login-form-div .login-password-div,
+.login-form-div .login-checkbox-forgot,
+.login-form-div .login-login-btn,
+.login-form-div .login-signin-using,
+.login-form-div .login-social-icons,
+.login-form-div .login-dont-have-account {
   margin: 10px;
   padding: 10px;
 }
 
-.form-div .login-signup-flex {
+.login-form-div .login-signup-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.form-div .upper-login {
+.login-form-div .login-upper-login {
   color: #000;
   text-align: center;
   font-family: Poppins;
@@ -90,10 +90,10 @@ body {
   letter-spacing: -0.32px;
 }
 
-.form-div .upper-signup {
+.login-form-div .login-upper-signup {
 }
 
-.form-div .text-01 {
+.login-form-div .login-text-01 {
   width: 348px;
   height: 14.6px;
   flex-shrink: 0;
@@ -106,13 +106,13 @@ body {
   letter-spacing: -0.32px;
 }
 
-.form-div .email-div {
+.login-form-div .login-email-div {
   width: 100%; 
   height: 72.779px;
   flex-shrink: 0;
 }
 
-.form-div .email-label {
+.login-form-div .login-email-label {
   color: #2B3674;
   font-family: Open Sans;
   font-size: 14px;
@@ -121,7 +121,7 @@ body {
   letter-spacing: -0.28px;
 }
 
-.form-div .email-div::before {
+.login-form-div .login-email-div::before {
   content: "*";
   color: #FF0101;
   font-family: Open Sans;
@@ -134,7 +134,7 @@ body {
   left: 0;
 }
 
-.form-div .email-input {
+.login-form-div .login-email-input {
   width: 100%; 
   height: 45px;
   flex-shrink: 0;
@@ -150,13 +150,13 @@ body {
   margin-top: 5px;
 }
 
-.form-div .password-div {
+.login-form-div .login-password-div {
   width: 100%; 
   height: 72.779px;
   flex-shrink: 0;
 }
 
-.form-div .password-label {
+.login-form-div .login-password-label {
   color: #2B3674;
   font-family: Open Sans;
   font-size: 14px;
@@ -165,7 +165,7 @@ body {
   letter-spacing: -0.28px;
 }
 
-.form-div .password-input {
+.login-form-div .login-password-input {
   width: 100%; 
   height: 45px;
   flex-shrink: 0;
@@ -181,13 +181,13 @@ body {
   margin-top: 5px;
 }
 
-.form-div .checkbox-forgot {
+.login-form-div .login-checkbox-forgot {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.form-div .keep-me-login {
+.login-form-div .login-keep-me-login {
   color: #2B3674;
   font-family: Open Sans;
   font-size: 14px;
@@ -196,7 +196,7 @@ body {
   letter-spacing: -0.28px;
 }
 
-.form-div .forget-password {
+.login-form-div .login-forget-password {
   color: #1B63F0;
   font-family: Open Sans;
   font-size: 14px;
@@ -205,7 +205,7 @@ body {
   letter-spacing: -0.28px;
 }
 
-.form-div .login-btn {
+.login-form-div .login-login-btn {
   width: 160px;
   height: 45px;
   border-radius: 5px;
@@ -216,7 +216,7 @@ body {
   margin: 0 auto;
 }
 
-.form-div .signin-using {
+.login-form-div .login-signin-using {
   width: 105px;
   height: 18px;
   color: #000;
@@ -231,26 +231,26 @@ body {
   margin: 0 auto;
 }
 
-.form-div .social-icons {
+.login-form-div .login-social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 
-.form-div .social-icons span {
+.login-form-div .login-social-icons span {
   margin: 0 10px;
 }
 
-.form-div .meta,
-.form-div .google,
-.form-div .twitter {
+.login-form-div .login-meta,
+.login-form-div .login-google,
+.login-form-div .login-twitter {
   width: 30px;
   height: 30px;
   flex-shrink: 0;
 }
 
-.form-div .dont-have-account {
+.login-form-div .login-dont-have-account {
   color: #000;
   text-align: center;
   font-family: Open Sans;
@@ -260,7 +260,7 @@ body {
   letter-spacing: -0.28px;
 }
 
-.form-div .dont-have-account a {
+.login-form-div .login-dont-have-account a {
   color: #0D67CA;
   font-family: Open Sans;
   font-size: 14px;
@@ -269,14 +269,15 @@ body {
   letter-spacing: -0.28px;
   text-decoration: none;
 }
-.form-div .content-wrapper {
+
+.login-form-div .content-wrapper {
   flex-grow: 1; 
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
 }
 
-.form-div .login-btn {
+.login-form-div .login-login-btn {
   width: 160px;
   height: 45px;
   border-radius: 5px;
@@ -286,7 +287,7 @@ body {
   align-items: center;
 }
 
-.form-div .signin-using {
+.login-form-div .login-signin-using {
   width: 105px;
   color: #000;
   font-family: Open Sans;
@@ -299,13 +300,13 @@ body {
   align-items: center;
 }
 
-.form-div .social-icons {
+.login-form-div .login-social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-div .dont-have-account {
+.login-form-div .login-dont-have-account {
   color: #000;
   text-align: center;
   font-family: Open Sans;
@@ -316,14 +317,14 @@ body {
   margin-top: 10px;
 }
 
-.form-div .dont-have-account a {
+.login-form-div .login-dont-have-account a {
   color: #0D67CA;
   text-decoration: none;
 }
 
-.form-div .content-wrapper .signin-using,
-.form-div .content-wrapper .social-icons,
-.form-div .content-wrapper .dont-have-account {
+.login-form-div .content-wrapper .login-signin-using,
+.login-form-div .content-wrapper .login-social-icons,
+.login-form-div .content-wrapper .login-dont-have-account {
   flex-shrink: 0; 
   margin-top: 10px; 
 }

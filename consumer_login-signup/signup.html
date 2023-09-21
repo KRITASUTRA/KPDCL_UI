@@ -3,59 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consumer Login</title>
+  <title>Consumer SignUp</title>
+  <!-- Include Bootstrap CSS (you may need to adjust the path) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Bootstrap JavaScript (you may need to adjust the path) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Include your custom CSS file -->
   <link rel="stylesheet" href="signup.css">
- 
 </head>
 <body>
-  <div class="parent-div">
-    <div class="image-div"></div>
-    <div class="form-div">
-      <div class="login-signup-flex">
-        <div class="upper-login">Login</div>
-        <div class="upper-signup active">SignUp</div>
+  <div class="signup-container-wrapper p-5">
+    <div class="row">
+      <div class="col-md-6 d-none d-md-block">
+        <div class="signup-image-div">
+          <img src="../public/signup.jpeg" alt="signup" class="img-fluid">
+        </div>
       </div>
-      <div class="content-wrapper">
-        <div class="input-container">
-            <div class="input-field">
-                <input type="text" class="myInput" required>
-                <label for="myInput" class="input-label">Consumer Code</label>
+      
+      <div class="col-md-6 m-auto ">
+        <div class="signup-form-div">
+          <div class="signup-login-signup-flex">
+            <div class="signup-upper-login">Login</div>
+            <div class="signup-upper-signup active">SignUp</div>
+          </div>
+          <div class="signup-content-wrapper">
+            <form>
+              <div class="form-group">
+                <label for="signup-consumerCode">Consumer Code</label>
+                <input type="text" class="form-control" id="signup-consumerCode" required>
+              </div>
+              <div class="form-group">
+                <label for="signup-installationNumber">Installation Number</label>
+                <input type="text" class="form-control" id="signup-installationNumber" required>
+              </div>
+              <div class="form-group">
+                <label for="signup-email">Email</label>
+                <input type="email" class="form-control" id="signup-email" required>
+              </div>
+              <div class="form-group">
+                <label for="signup-phone">Phone</label>
+                <input type="text" class="form-control" id="signup-phone" required>
+              </div>
+              <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" class="form-control" id="signup-password" required>
+              </div>
+              <div class="form-group">
+                <label for="signup-confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="signup-confirmPassword" required>
+              </div>
+              <div class="form-group text-center">
+                <button class="btn btn-primary">Sign Up</button>
+              </div>
+              
+            </form>
+            <div class="text-center signup-already-have-account">
+              Already have an account? <a href="#" style="color: #0D67CA;">Login</a>
             </div>
-            <div class="input-field">
-                <input type="text" class="myInput" required>
-                <label for="myInput" class="input-label">Installation Number</label>
-            </div>
-            <div class="input-field">
-                <input type="email" class="myInput" required>
-                <label for="myInput" class="input-label">Email</label>
-            </div>
-            <div class="input-field">
-                <input type="text" class="myInput" required>
-                <label for="myInput" class="input-label">Phone</label>
-            </div>
-            <div class="input-field">
-                <input type="password" class="myInput" required>
-                <label for="myInput" class="input-label">Password</label>
-            </div>
-            <div class="input-field">
-                <input type="password" class="myInput" required>
-                <label for="myInput" class="input-label">Confirm Password</label>
-            </div>
-            <div class="signup-button">
-                <button>SignUp</button>
-            </div>
-            <div class="already-have-account">
-                Already have an account?
-                <span style="color: #0D67CA;">Login</span> 
-            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </body>
 </html>
-
-
-
-
-

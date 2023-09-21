@@ -4,66 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consumer Login</title>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <div class="parent-div">
-    <div class="image-div"></div>
-    <div class="form-div">
-      <div class="login-signup-flex">
-        <div class="upper-login" style="cursor: pointer;">Login</div>
-        <div class="upper-signup" style="cursor: pointer;">SignUp</div>
+  <div class="container-wrapper p-5">
+    <div class="row">
+      <div class="col-md-6 d-none d-md-block">
+        <div class="login-image-div">
+          <img src="../public/vecteezy-flatisometricconceptillustrationhousewithsolarpanel-7885716-1@2x.png" alt="login" class="img-fluid">
+        </div>
       </div>
-      <span class="line"></span>
-
-      <div class="content-wrapper">
-        <div class="text-01">Enter your credentials to Login!</div>
-
-        <div class="email-div">
-          <label for="email" class="email-label">Consumer Code / Email / Phone <span style="color: red;">*</span></label>
-          <input type="email" name="email" id="email" class="email-input" placeholder="mail@simmmple.com">
-        </div>
-  
-        <div class="password-div">
-          <label for="password" class="password-label">Password <span style="color: red;">*</span></label>
-          <input type="password" name="password" id="password" class="password-input" placeholder="Min 8 Characters">
-        </div>
-  
-        <div class="checkbox-forgot">
-          <div>
-            <input type="checkbox" name="keep-login" id="keep-login">
-            <span class="keep-me-login">Keep me logged in</span>
+      
+      <div class="col-md-6 m-auto ">
+        <div class="login-form-div">
+          <div class="login-signup-flex">
+            <div class="login-upper-login active">Login</div>
+            <div class="login-upper-signup">SignUp</div>
           </div>
-          <div>
-            <a href="#" class="forget-password">Forget password?</a>
+          <div class="login-content-wrapper">
+            <form>
+            
+               
+                  <p class="login-text-01">Enter your credentials to Login!</p>
+        
+                  
+                    <div class="login-form-group login-email-div">
+                      <label for="login-email" class="login-email-label">Consumer Code / Email / Phone <span style="color: red;">*</span></label>
+                      <input type="email" name="login-email" id="login-email" class="login-form-control login-email-input" placeholder="mail@simmmple.com" required>
+                    </div>
+        
+                    <div class="login-form-group login-password-div">
+                      <label for="login-password" class="login-password-label">Password <span style="color: red;">*</span></label>
+                      <input type="password" name="login-password" id="login-password" class="login-form-control login-password-input" placeholder="Min 8 Characters" required>
+                    </div>
+        
+                    <div class="login-form-group login-checkbox-forgot">
+                      <div class="login-form-check">
+                        <input type="checkbox" name="login-keep-login" id="login-keep-login" class="login-form-check-input">
+                        <label class="login-form-check-label login-keep-me-login">Keep me logged in</label>
+                      </div>
+                      <a href="#" class="login-forget-password">Forget password?</a>
+                    </div>
+        
+                    <div class="login-form-group text-center m-4">
+                      <button type="submit" class="btn btn-primary login-btn">LOGIN</button>
+                    </div>
+                
+        
+                  <p class="login-signin-using">Or Signin using</p>
+        
+                  <div class="login-social-icons">
+                    <span class="login-meta">
+                      <img src="../public/facebook.svg" alt="facebook">
+                    </span>
+                    <span class="login-google">
+                      <img src="../public/logosgooglegmail.svg" alt="google">
+                    </span>
+                    <!-- <span class="login-twitter">
+                      <img src="../public/03hdftwitterlogo-1@2x.png" alt="twitter">
+                    </span> -->
+                  </div>
+        
+                  <div class="login-form-group login-dont-have-account">
+                    Don’t have an account? <a href="#" style="color: #0D67CA;">Signup</a>
+                  </div>
+                
+              
+            </form>
+            <div class="login-text-center text-center login-already-have-account">
+              Already have an account? <a href="#" style="color: #0D67CA;">Login</a>
+            </div>
           </div>
-        </div>
-  
-        <div>
-          <button class="login-btn" style="color: white;">LOGIN</button>
-        </div>
-  
-        <p class="signin-using">
-          Or Signin using
-        </p>
-  
-        <div class="social-icons">
-          <span class="meta">
-            <img src="../public/facebook.svg" alt="facebook">
-          </span>
-          <span class="google">
-            <img src="../public/logosgooglegmail.svg" alt="google">
-          </span>
-          <!-- <span class="twitter">
-            <img src="../public/03hdftwitterlogo-1@2x.png" alt="twitter">
-          </span> -->
-        </div>
-  
-        <div class="dont-have-account">
-          Don’t have an account? <span style="color: #0D67CA;">Signup</span> 
         </div>
       </div>
     </div>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
