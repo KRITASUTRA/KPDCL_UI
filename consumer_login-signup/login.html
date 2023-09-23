@@ -20,55 +20,58 @@
       </div>
       
       <div class="col-md-6 m-auto ">
-        <div class="login-form-div">
+        <div class="loginFormDiv">
           <div class="row mt-4">
             <div class="col">
-                <div class="border-bottom-bold-login text-center">Login</div>
+                <div class="borderBottomBoldLogin text-center">Login</div>
             </div>
             <div class="col">
                 <div class="text-center">SignUp</div>
             </div>
         </div>
-        <div class="bottom-line-login"></div>
+        <div class="bottomLineLogin"></div>
         
         
-          <div class="login-content-wrapper mt-2">
+          <div class="loginContentWrapper mt-2">
             <form>
             
-               
-                  <p class="login-text-01">Enter your credentials to Login!</p>
+               <div>
+                <p class="loginText01">Enter your credentials to Login!</p>
         
                   
-                    <div class="login-form-group login-email-div">
-                      <label for="login-email" class="login-email-label">Consumer Code / Email / Phone <span style="color: red;">*</span></label>
-                      <input type="email" name="login-email" id="login-email" class="login-form-control login-email-input" placeholder="mail@simmmple.com" required>
-                    </div>
-        
-                    <div class="login-form-group login-password-div">
-                      <label for="login-password" class="login-password-label">Password <span style="color: red;">*</span></label>
-                      <input type="password" name="login-password" id="login-password" class="login-form-control login-password-input" placeholder="Min 8 Characters" required>
-                    </div>
-        
-                    <div class="login-form-group login-checkbox-forgot">
+               </div>
+               <div class="form-group">
+                <label for="login-email" class="login-email-label">Consumer Code / Email / Phone <span style="color: red;">*</span></label> 
+                               <input type="email" class="form-control"  id="login-email"  required>
+              </div>
+
+                   
+              <div class="form-group">
+                <label for="login-password" class="login-password-label">Password <span style="color: red;">*</span></label> 
+                               <input type="password" class="form-control"  id="login-password" placeholder="Min 8 Characters" required>
+              </div>
+                   
+                    
+                    <div class="loginFormGroup loginCheckboxForgot">
                       <div class="login-form-check">
-                        <input type="checkbox" name="login-keep-login" id="login-keep-login" class="login-form-check-input">
-                        <label class="login-form-check-label login-keep-me-login">Keep me logged in</label>
+                        <input type="checkbox" name="login-keep-login" id="login-keep-login" >
+                        <label >Keep me logged in</label>
                       </div>
-                      <a href="#" class="login-forget-password">Forget password?</a>
+                      <a href="#" class="loginForgetPassword">Forget password?</a>
                     </div>
         
-                    <div class="login-form-group text-center m-4">
+                    <div class="loginFormGroup text-center m-4">
                       <button type="submit" class="btn btn-primary login-btn">LOGIN</button>
                     </div>
                 
         
-                  <p class="login-signin-using">Or Signin using</p>
+                  <p class="loginSigninUsing">Or Signin using</p>
         
-                  <div class="login-social-icons">
-                    <span class="login-meta">
+                  <div class="loginSocialIcons">
+                    <span class="loginMeta">
                       <img src="../public/facebook.svg" alt="facebook">
                     </span>
-                    <span class="login-google">
+                    <span class="loginGoogle">
                       <img src="../public/logosgooglegmail.svg" alt="google">
                     </span>
                     <!-- <span class="login-twitter">
@@ -76,13 +79,13 @@
                     </span> -->
                   </div>
         
-                  <div class="login-form-group login-dont-have-account">
+                  <div class="loginFormGroup loginDontHaveAccount">
                     Don’t have an account? <a href="#" style="color: #0D67CA;">Signup</a>
                   </div>
                 
               
             </form>
-            <div class="login-text-center text-center login-already-have-account">
+            <div class=" text-center loginAlreadyHaveAccount">
               Already have an account? <a href="#" style="color: #0D67CA;">Login</a>
             </div>
           </div>

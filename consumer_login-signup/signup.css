@@ -1,24 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.signup-parent-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1542px;
-    height: 800px;
-    background: #fff;
-    margin: 50px auto;
-}
-
-.signup-image-div {
+.signupImageDiv {
     flex: 0 0 60%;
     width: 100%;
     height: 100%;
@@ -26,9 +6,11 @@ body {
     background: #ffffffff url("../public/signup.jpeg") 50% / cover no-repeat;
 }
 
-.signup-form-div {
+.signupFormDiv {
     flex: 0 0 40%;
     width: 100%;
+      max-width: 527px; 
+
     height: 80%;
     padding: 20px;
     border-radius: 30px;
@@ -43,50 +25,46 @@ body {
         0px 5px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
-.signup-form-div .signup-login-signup-flex,
-.signup-form-div .signup-text-01,
-.signup-form-div .signup-email-div,
-.signup-form-div .signup-password-div,
-.signup-form-div .signup-checkbox-forgot,
-.signup-form-div .signup-login-btn,
-.signup-form-div .signup-signin-using,
-.signup-form-div .signup-social-icons,
-.signup-form-div .signup-dont-have-account {
+.signupFormDiv .signupLoginSignupFlex,
+.signupFormDiv .signupText01,
+.signupFormDiv .signupEmailDiv,
+.signupFormDiv .signupPasswordDiv,
+.signupFormDiv .signupCheckboxForgot,
+.signupFormDiv .signupLoginBtn,
+.signupFormDiv .signupSigninUsing,
+.signupFormDiv .signupSocialIcons,
+.signupFormDiv .signupDontHaveAccount {
     margin: 10px;
     padding: 10px;
 }
 
-
-
-
-.border-bottom-bold-signup {
+.borderBottomBoldSignup {
     border-bottom: 2px solid #000; 
     padding-bottom: 5px; 
     font-weight: bold; 
-  }
-  
-  .bottom-line-signup {
-    border-bottom: 2px solid #000; 
-  }
-  
+}
 
-.signup-input-container {
+.bottomLineSignup {
+    border-bottom: 2px solid #000; 
+}
+
+.signupInputContainer {
     position: relative;
     width: 100%;
     max-width: 100%;
 }
 
-.signup-input-field {
+.signupInputField {
     position: relative;
     margin-bottom: 20px;
 }
 
-.signup-input-field input {
+.signupInputField input {
     width: 100%;
     padding: 10px;
 }
 
-.signup-input-label {
+.signupInputLabel {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -96,28 +74,28 @@ body {
     transition: top 0.3s, left 0.3s, font-size 0.3s;
 }
 
-.signup-input-field input:focus + .signup-input-label,
-.signup-input-field input:not(:placeholder-shown) + .signup-input-label {
+.signupInputField input:focus + .signupInputLabel,
+.signupInputField input:not(:placeholder-shown) + .signupInputLabel {
     top: 0;
     left: 0;
     font-size: 12px;
 }
 
-.signup-login-signup-flex {
+.signupLoginSignupFlex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.signup-upper-login,
-.signup-upper-signup {
+.signupUpperLogin,
+.signupUpperSignup {
     cursor: pointer;
     position: relative;
     padding-bottom: 10px;
 }
 
-.signup-login-signup-flex::before {
+.signupLoginSignupFlex::before {
     content: "";
     display: block;
     width: 100%;
@@ -128,7 +106,7 @@ body {
     left: 0;
 }
 
-.signup-upper-signup.active::before {
+.signupUpperSignup.active::before {
     content: "";
     display: block;
     width: 100%;
@@ -140,12 +118,12 @@ body {
     transition: all 0.3s;
 }
 
-.signup-button {
+.signupButton {
     text-align: center;
     margin-top: 20px;
 }
 
-.signup-button button {
+.signupButton button {
     background-color: #0D67CA;
     color: #fff;
     padding: 10px 20px;
@@ -154,14 +132,14 @@ body {
     font-size: 16px;
 }
 
-.signup-already-have-account {
+.signupAlreadyHaveAccount {
     text-align: center;
     margin-top: 10px;
     color: #888;
 }
 
 @media screen and (max-width: 768px) {
-    .signup-parent-div {
+    .signupParentDiv {
         flex-direction: column; 
         width: 100%; 
         margin: 0;
@@ -169,12 +147,12 @@ body {
         height: auto; 
     }
 
-    .signup-image-div {
+    .signupImageDiv {
         flex: 1; 
         height: auto;
     }
 
-    .signup-form-div {
+    .signupFormDiv {
         flex: 1; 
         height: auto; 
         border-radius: 0; 
