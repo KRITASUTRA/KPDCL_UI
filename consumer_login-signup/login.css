@@ -54,11 +54,7 @@ body {
     display: none; 
   }
 
-  .login-form-div {
-    flex: 1; 
-    max-width: none; 
-    margin-top: 20px; 
-  }
+
 }
 
 .login-form-div .login-signup-flex,
@@ -74,24 +70,16 @@ body {
   padding: 10px;
 }
 
-.login-form-div .login-signup-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.border-bottom-bold-login {
+  border-bottom: 2px solid #000; 
+  padding-bottom: 5px; 
+  font-weight: bold; 
 }
 
-.login-form-div .login-upper-login {
-  color: #000;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: -0.32px;
+.bottom-line-login {
+  border-bottom: 2px solid #000; 
 }
 
-.login-form-div .login-upper-signup {
-}
 
 .login-form-div .login-text-01 {
   width: 348px;
