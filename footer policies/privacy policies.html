@@ -3,27 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="p.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <title>Privacy Policies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .privacyBackgroundimage {
+            background-image: url('./privacy.jpg'); /* Replace 'your-image.jpg' with your image file */
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 1335px) {
+    .privacyBackgroundimage {
+        background-size: 70%; /* Increase the background size for smaller screens */
+
+    }
+} 
+        @media (max-width: 768px) {
+    .privacyBackgroundimage {
+        background-size: cover; /* Increase the background size for smaller screens */
+
+    }
+}
+    
+    </style>
 </head>
 <body>
-        <div class="image">
-        <div class="label"><div class="text-wrapper">Privacy Policy</div></div>
-        <div class="label1">
-            <p class="this-website-and-all">
+<div class="container-fluid  privacyBackgroundimage">
+    
+        <div class="col-md-8 col-lg-3 text-justify">
+            <h2 class="text-center">Privacy Policy</h2>
+            <p>
               This website and all the connected portals which the property of KPDCL are enabled to record your visits but
               does not save any specific data except for what helps us to know the web traffic on the web site. Things we
               record include number of hits, pages visited by users etc <br /><br />We will not identify users or their
               browsing activities, except when a law enforcement agency may exercise a warrant to inspect the service
-              provider&#39;s logs
+              provider
             </p>
-          </div>
-        </div>
+        
+    </div>
+</div>
+
 </body>
 </html>
+
